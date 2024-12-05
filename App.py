@@ -32,5 +32,5 @@ def run_openface(path):
 
 if __name__ == '__main__':
     app.config['JSON_AS_ASCII'] = False
-    port = int(os.environ.get('PORT', 5000))
+    port = int(os.environ.get('PORT', 5999))
     app.run(host='0.0.0.0', port=port)

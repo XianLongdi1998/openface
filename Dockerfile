@@ -15,4 +15,4 @@ RUN pip install Flask-Cors==4.0.1
 EXPOSE 5999
 
 # Define the entry point for the container
-CMD ["python", "App.py", "runserver", "0.0.0.0:5999"]
+CMD ["python", "App.py"]
