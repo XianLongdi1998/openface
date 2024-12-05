@@ -9,6 +9,8 @@ COPY . /App
 
 
 RUN chmod 755 /App/openface
+RUN chmod 644 /App/openface/FeatureExtraction.exe
+
 RUN ls -l ./openface 
 RUN ls -l /App/openface
 
