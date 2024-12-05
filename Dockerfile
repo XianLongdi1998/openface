@@ -2,10 +2,14 @@
 FROM python:3.10
 
 # Set the working directory in the container
-WORKDIR /App
+WORKDIR /openfce
 
 # Copy the application files into the working directory
-COPY . /App
+COPY . /openface
+
+
+RUN chmod 755 /openface
+
 
 # Install the application dependencies
 RUN pip install Flask==3.0.3
