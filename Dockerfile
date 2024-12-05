@@ -11,5 +11,8 @@ COPY . /App
 RUN pip install Flask==3.0.3
 RUN pip install Flask-Cors==4.0.1
 
+# Expose port 5999
+EXPOSE 5999
+
 # Define the entry point for the container
 CMD ["python", "App.py", "runserver", "0.0.0.0:5999"]
