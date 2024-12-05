@@ -14,6 +14,9 @@ RUN chmod +x /App/openface/FeatureExtraction.exe
 RUN ls -l ./openface 
 RUN ls -l /App/openface
 
+RUN sudo apt update
+RUN sudo apt install wine
+
 # Install the application dependencies
 RUN pip install Flask==3.0.3
 RUN pip install Flask-Cors==4.0.1
