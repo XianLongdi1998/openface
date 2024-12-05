@@ -7,6 +7,15 @@ CORS(app)
 
 
 print("ssssssssssssssssssssssssssssssssssssssssssssssssss")
+print()
+openface_path = './openface/'
+
+# List all files in the specified directory
+files_in_openface = os.listdir(openface_path)
+
+# Print the files
+for file in files_in_openface:
+    print(file)
 openface_path = './openface/FeatureExtraction.exe'
 
 @app.route("/run_openface/<path>", methods=["GET"])
