@@ -8,7 +8,8 @@ WORKDIR /App
 COPY . /App
 
 # Install the application dependencies
-RUN pip install -r requirements.txt
+RUN pip install Flask==3.0.3
+RUN pip install Flask-Cors==4.0.1
 
 # Define the entry point for the container
 CMD ["python", "App.py", "runserver", "0.0.0.0:5999"]
