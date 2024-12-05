@@ -16,7 +16,9 @@ files_in_openface = os.listdir(openface_path)
 # Print the files
 for file in files_in_openface:
     print(file)
-openface_path = './openface/FeatureExtraction.exe'
+
+
+openface_path = 'wine ./openface/FeatureExtraction.exe'
 
 @app.route("/run_openface/<path>", methods=["GET"])
 def run_openface(path):
@@ -29,7 +31,7 @@ def run_openface(path):
     verbose=False
     print("aaaaaaaa")
     try:
-        command = [openface_path, '-f', f, '-out_dir', intermediate_path, '-aus']
+        command = ['wine', openface_path, '-f', f, '-out_dir', intermediate_path, '-aus']
         if verbose:
             command.append('-verbose')
         subprocess.run(command, check=True)
