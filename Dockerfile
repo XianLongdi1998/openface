@@ -2,13 +2,13 @@
 FROM python:3.10
 
 # Set the working directory in the container
-WORKDIR /APP
+WORKDIR /App
 
 # Copy the application files into the working directory
-COPY . /openface
+COPY . /App
 
 
-RUN chmod 755 /openface
+RUN chmod 755 /App/openface
 
 
 # Install the application dependencies
