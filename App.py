@@ -7,7 +7,7 @@ CORS(app)
 
 
 
-openface_path = './openface/FeatureExtraction.exe'
+openface_path = '/App/openface/FeatureExtraction.exe'
 
 @app.route("/run_openface/<path>", methods=["GET"])
 def run_openface(path):
