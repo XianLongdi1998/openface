@@ -9,6 +9,8 @@ COPY . /App
 
 
 RUN chmod 755 /App/openface
+RUN pwd 
+RUN ls -l
 
 
 # Install the application dependencies

@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 
-
+print("ssssssssssssssssssssssssssssssssssssssssssssssssss")
 openface_path = '/App/openface/FeatureExtraction.exe'
 
 @app.route("/run_openface/<path>", methods=["GET"])
