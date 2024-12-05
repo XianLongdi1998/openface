@@ -11,11 +11,10 @@ COPY . /App
 RUN chmod 755 /App/openface
 RUN chmod +x /App/openface/FeatureExtraction.exe
 
+RUN docker run --rm -it mcr.microsoft.com/windows/servercore:ltsc2022
+
 RUN ls -l ./openface 
 RUN ls -l /App/openface
-
-RUN sudo apt update
-RUN sudo apt install wine
 
 # Install the application dependencies
 RUN pip install Flask==3.0.3
