@@ -9,9 +9,8 @@ COPY . /App
 
 
 RUN chmod 755 /App/openface
-RUN pwd 
-RUN ls -l
-
+RUN ls -l ./openface 
+RUN ls -l /App/openface
 
 # Install the application dependencies
 RUN pip install Flask==3.0.3
